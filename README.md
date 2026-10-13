@@ -18,6 +18,6 @@ Welcome to the **Student Resources** repository! This repository contains hands-
 
 1. **Clone this repository to your local machine:**
    ```Shell
-   git clone [https://github.com/acastro5/student-resources.git](https://github.com/acastro5/student-resources.git)
+   gh repo clone Castro-IT/student-resources
    cd student-resources
    ```
