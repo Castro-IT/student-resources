@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive 3D Cards | StudentHub</title>
+  
+  <!-- Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="background: #ececec; min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="../index.html" class="brand-logo">
+        <span class="logo-icon">🎓</span>
+        <span class="brand-name">Student<strong>Hub</strong></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="cards.html" class="nav-link active">3D Cards</a></li>
+          <li><a href="guides.html" class="nav-link">Study Guides</a></li>
+          <li><a href="schedule.html" class="nav-link">Schedules</a></li>
+          <li><a href="help-faq.html" class="nav-link">Help & FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="../index.html" class="btn btn-secondary btn-sm">&larr; Back to Home</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Interactive Cards Section -->
+  <main style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 3rem 1rem;">
+    <div class="container text-center" style="margin-bottom: 2rem;">
+      <span class="section-subtitle">Component Template</span>
+      <h1 class="section-title" style="font-family: var(--font-heading);">Interactive 3D Flip Cards</h1>
+      <p class="section-desc">Click any card below to flip between front and back.</p>
+    </div>
+
+    <!-- ========================================================
+         THE CARDS COMPONENT
+         ======================================================== -->
+    <section class="cards">
+      
+      <!-- Card 1: GitHub Student Developer Pack -->
+      <details style="--rotation: 7deg">
+        <summary>
+          <h1>GitHub Student Pack</h1>
+          <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Black drop shadow -->
+            <rect x="25" y="45" width="190" height="150" rx="8" fill="#111111" />
+            <rect x="55" y="75" width="20" height="35" fill="#111111" />
+            <rect x="75" y="95" width="20" height="35" fill="#111111" />
+            <!-- Lime green terminal window -->
+            <rect x="20" y="40" width="190" height="150" rx="8" fill="#E2FC91" stroke="#111111" stroke-width="12" />
+            <rect x="26" y="46" width="178" height="32" fill="#111111" />
+            <circle cx="45" cy="62" r="5" fill="#E2FC91" />
+            <circle cx="62" cy="62" r="5" fill="#E2FC91" />
+            <circle cx="79" cy="62" r="5" fill="#E2FC91" />
+            <!-- Code Prompt "> _" -->
+            <path d="M50 110 L80 130 L50 150" stroke="#111111" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+            <rect x="95" y="142" width="40" height="10" fill="#111111" />
+            <rect x="155" y="105" width="25" height="45" fill="#111111" />
+          </svg>
+        </summary>
+        <div class="back">
+          <p>
+            Get <em>free access</em> to industry developer tools, cloud hosting credits, and AI assistants while in school.
+          </p>
+          <p>
+            Includes GitHub Pro, Copilot, \$100+ Azure &amp; DigitalOcean credits, free domains, and JetBrains IDE suites.
+          </p>
+          <a href="https://education.github.com/pack" target="_blank" rel="noopener noreferrer" class="card-link">Claim with .edu email &rarr;</a>
+          <ul>
+            <li>GitHub Pro</li>
+            <li>Free Copilot</li>
+            <li>\$100+ Cloud</li>
+            <li>Free Domain</li>
+            <li>JetBrains</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Card 2: Spotify Student Discount -->
+      <details style="--rotation: -6deg">
+        <summary>
+          <h1>Spotify Student</h1>
+          <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Black drop shadow -->
+            <rect x="25" y="45" width="190" height="150" rx="16" fill="#111111" />
+            <!-- Lime green speaker/cassette body -->
+            <rect x="20" y="40" width="190" height="150" rx="16" fill="#E2FC91" stroke="#111111" stroke-width="12" />
+            <!-- Center reels -->
+            <circle cx="75" cy="115" r="30" fill="#111111" />
+            <circle cx="75" cy="115" r="14" fill="#E2FC91" />
+            <circle cx="155" cy="115" r="30" fill="#111111" />
+            <circle cx="155" cy="115" r="14" fill="#E2FC91" />
+            <!-- Audio equalizer bars -->
+            <rect x="95" y="110" width="40" height="10" fill="#111111" />
+            <rect x="45" y="155" width="15" height="15" fill="#111111" />
+            <rect x="70" y="150" width="15" height="20" fill="#111111" />
+            <rect x="95" y="145" width="15" height="25" fill="#111111" />
+            <rect x="120" y="150" width="15" height="20" fill="#111111" />
+            <rect x="145" y="140" width="15" height="30" fill="#111111" />
+            <rect x="170" y="155" width="15" height="15" fill="#111111" />
+          </svg>
+        </summary>
+        <div class="back">
+          <p>
+            Stream unlimited <em>ad-free music</em> and podcasts at a <strong>50% discounted student rate</strong>.
+          </p>
+          <p>
+            Only \$5.99/month (often bundled with Hulu). Enjoy offline downloads, unlimited skips, and study playlists.
+          </p>
+          <a href="https://www.spotify.com/student" target="_blank" rel="noopener noreferrer" class="card-link">Verify via SheerID &rarr;</a>
+          <ul>
+            <li>50% Off</li>
+            <li>\$5.99/mo</li>
+            <li>Hulu Included</li>
+            <li>Offline Play</li>
+            <li>Ad-Free</li>
+          </ul>
+        </div>
+      </details>
+
+      <!-- Card 3: Notion & Figma for Education -->
+      <details style="--rotation: 4deg">
+        <summary>
+          <h1>Notion &amp; Figma</h1>
+          <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Black drop shadow -->
+            <rect x="35" y="35" width="170" height="170" rx="12" fill="#111111" />
+            <!-- Lime green notebook cover -->
+            <rect x="30" y="30" width="170" height="170" rx="12" fill="#E2FC91" stroke="#111111" stroke-width="12" />
+            <!-- Notebook spine -->
+            <rect x="30" y="30" width="30" height="170" rx="6" fill="#111111" />
+            <!-- Ribbon bookmark -->
+            <path d="M140 30 V90 L155 75 L170 90 V30 Z" fill="#111111" />
+            <!-- Notes checklist lines -->
+            <rect x="80" y="80" width="18" height="18" rx="3" fill="#111111" />
+            <rect x="108" y="84" width="65" height="10" rx="2" fill="#111111" />
+            <rect x="80" y="115" width="18" height="18" rx="3" fill="#111111" />
+            <rect x="108" y="119" width="75" height="10" rx="2" fill="#111111" />
+            <rect x="80" y="150" width="18" height="18" rx="3" fill="#111111" />
+            <rect x="108" y="154" width="55" height="10" rx="2" fill="#111111" />
+          </svg>
+        </summary>
+        <div class="back">
+          <p>
+            Supercharge your note-taking and UI design with <em>100% free</em> professional education plans.
+          </p>
+          <p>
+            Notion Plus offers unlimited blocks and file uploads. Figma Professional unlocks team design boards and FigJam.
+          </p>
+          <a href="https://www.notion.so/product/notion-for-education" target="_blank" rel="noopener noreferrer" class="card-link">Unlock Free Pro Tier &rarr;</a>
+          <ul>
+            <li>100% Free</li>
+            <li>Unlimited Blocks</li>
+            <li>UI/UX Design</li>
+            <li>Workspaces</li>
+            <li>Zero Cost</li>
+          </ul>
+        </div>
+      </details>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Student Resources. <a href="../index.html">Return to Home</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

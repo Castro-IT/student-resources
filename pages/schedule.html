@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ====================================================================
+       1. PAGE METADATA (CUSTOMIZE HERE)
+       ==================================================================== -->
+  <title>Academic Schedule & Dates | StudentHub</title>
+  <meta name="description" content="View semester timelines, midterm/final exam periods, and registration deadlines.">
+
+  <!-- Fonts & Stylesheet (Note: ../css/style.css because this is in /pages/) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    /* Lightweight table styling for weekly schedules */
+    .schedule-table-wrap {
+      overflow-x: auto;
+      margin-top: 1.5rem;
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+    }
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9375rem;
+    }
+    .schedule-table th, .schedule-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .schedule-table th {
+      background-color: var(--color-bg-subtle);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: var(--color-secondary);
+    }
+    .schedule-table tr:last-child td {
+      border-bottom: none;
+    }
+    .schedule-table tr:hover td {
+      background-color: #f8fafc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====================================================================
+       2. SITE HEADER & NAVIGATION
+       ==================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="../index.html" class="brand-logo">
+        <span class="logo-icon">🎓</span>
+        <span class="brand-name">Student<strong>Hub</strong></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="guides.html" class="nav-link">Study Guides</a></li>
+          <li><a href="schedule.html" class="nav-link active">Schedules</a></li>
+          <li><a href="help-faq.html" class="nav-link">Help & FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="../assets/documents/academic-calendar.pdf" class="btn btn-secondary btn-sm" download>Download PDF</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         3. PAGE BANNER / INTRO
+         ==================================================================== -->
+    <section class="section bg-light" style="padding-top: 3.5rem; padding-bottom: 3.5rem;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Semester Timetable</span>
+          <h1 class="section-title">Academic Schedule & Important Dates</h1>
+          <p class="section-desc">
+            Stay on track with upcoming semester deadlines, examination periods, and holidays.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. IMPORTANT DATES LIST (ADD / EDIT YOUR DATES HERE)
+         ==================================================================== -->
+    <section class="section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">Calendar Milestones</span>
+          <h2 class="section-title">Key Semester Dates</h2>
+          <p class="section-desc">Mark these important dates on your personal calendar.</p>
+        </div>
+
+        <div class="dates-list" style="max-width: 800px; margin: 0 auto;">
+
+          <!-- Date Item 1 -->
+          <div class="date-row">
+            <div class="date-badge">
+              <span class="date-month">OCT</span>
+              <span class="date-day">24</span>
+            </div>
+            <div class="date-details">
+              <h4>Midterm Examination Week</h4>
+              <p>Check course LMS pages for specific room assignments and start times.</p>
+            </div>
+          </div>
+
+          <!-- Date Item 2 -->
+          <div class="date-row">
+            <div class="date-badge">
+              <span class="date-month">NOV</span>
+              <span class="date-day">05</span>
+            </div>
+            <div class="date-details">
+              <h4>Course Withdrawal Deadline</h4>
+              <p>Last day to withdraw from regular semester courses with a recorded 'W'.</p>
+            </div>
+          </div>
+
+          <!-- Date Item 3 -->
+          <div class="date-row">
+            <div class="date-badge">
+              <span class="date-month">NOV</span>
+              <span class="date-day">23</span>
+            </div>
+            <div class="date-details">
+              <h4>Thanksgiving Recess</h4>
+              <p>No classes held from Wednesday 12:00 PM through Sunday.</p>
+            </div>
+          </div>
+
+          <!-- Date Item 4 -->
+          <div class="date-row">
+            <div class="date-badge">
+              <span class="date-month">DEC</span>
+              <span class="date-day">14</span>
+            </div>
+            <div class="date-details">
+              <h4>Final Examination Week</h4>
+              <p>Final exams conclude on December 18. Semester grades posted December 22.</p>
+            </div>
+          </div>
+
+          <!-- ========================================================
+               [COPY & PASTE THIS BLOCK TO ADD A NEW DATE / EVENT]:
+               ========================================================
+          <div class="date-row">
+            <div class="date-badge">
+              <span class="date-month">MONTH</span>
+              <span class="date-day">DAY</span>
+            </div>
+            <div class="date-details">
+              <h4>Your Event or Deadline Title</h4>
+              <p>Details or room numbers for this event.</p>
+            </div>
+          </div>
+          ======================================================== -->
+
+        </div>
+
+        <!-- Download Action -->
+        <div class="text-center" style="margin-top: 2.5rem;">
+          <a href="../assets/documents/academic-calendar.pdf" class="btn btn-primary" download>
+            Download Full Academic Calendar (PDF)
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. WEEKLY SCHEDULE / TIMETABLE TEMPLATE (CUSTOMIZE YOUR CLASSES)
+         ==================================================================== -->
+    <section class="section bg-light">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">Weekly Schedule</span>
+          <h2 class="section-title">Sample Course Schedule</h2>
+          <p class="section-desc">Customize this table with your course lecture hours and room locations.</p>
+        </div>
+
+        <div class="schedule-table-wrap">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Course Name</th>
+                <th>Location / Room</th>
+                <th>Instructor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr>
+                <td><strong>Mon / Wed</strong></td>
+                <td>09:00 AM – 10:15 AM</td>
+                <td>MATH 101: Calculus I</td>
+                <td>Science Hall 102</td>
+                <td>Dr. Smith</td>
+              </tr>
+              <!-- Row 2 -->
+              <tr>
+                <td><strong>Mon / Wed</strong></td>
+                <td>11:00 AM – 12:15 PM</td>
+                <td>ENG 102: College Writing</td>
+                <td>Humanities Hall 204</td>
+                <td>Prof. Davis</td>
+              </tr>
+              <!-- Row 3 -->
+              <tr>
+                <td><strong>Tue / Thu</strong></td>
+                <td>10:00 AM – 11:30 AM</td>
+                <td>CS 101: Intro to Programming</td>
+                <td>Engineering Lab B</td>
+                <td>Dr. Patel</td>
+              </tr>
+
+              <!-- ====================================================
+                   [COPY & PASTE THIS ROW TO ADD ANOTHER CLASS]:
+                   ====================================================
+              <tr>
+                <td><strong>Days</strong></td>
+                <td>Time Range</td>
+                <td>Course Code & Title</td>
+                <td>Building / Room</td>
+                <td>Instructor Name</td>
+              </tr>
+              ==================================================== -->
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       6. FOOTER
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Student Resources. <a href="../index.html">Return to Home</a> &bull; <a href="guides.html">Study Guides</a> &bull; <a href="help-faq.html">Help & FAQ</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

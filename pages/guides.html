@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ====================================================================
+       1. PAGE METADATA (CUSTOMIZE HERE)
+       ==================================================================== -->
+  <title>Study Guides & Resources | StudentHub</title>
+  <meta name="description" content="Download study guides, course notes, and revision packets.">
+
+  <!-- Fonts & Stylesheet (Note: ../css/style.css because this is in /pages/) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ====================================================================
+       2. SITE HEADER & NAVIGATION
+       ==================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="../index.html" class="brand-logo">
+        <span class="logo-icon">🎓</span>
+        <span class="brand-name">Student<strong>Hub</strong></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="guides.html" class="nav-link active">Study Guides</a></li>
+          <li><a href="schedule.html" class="nav-link">Schedules</a></li>
+          <li><a href="help-faq.html" class="nav-link">Help & FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action & Mobile Hamburger -->
+      <div class="header-actions">
+        <a href="../index.html" class="btn btn-secondary btn-sm">&larr; Back to Home</a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         3. PAGE BANNER / INTRO
+         ==================================================================== -->
+    <section class="section bg-light" style="padding-top: 3.5rem; padding-bottom: 3.5rem;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic Library</span>
+          <h1 class="section-title">Study Guides & Course Materials</h1>
+          <p class="section-desc">
+            Download revision guides, past problem sets, and syllabus outlines for your courses.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. STUDY GUIDES GRID (ADD / CUSTOMIZE YOUR GUIDES HERE)
+         ==================================================================== -->
+    <section class="section">
+      <div class="container">
+        
+        <div class="quick-grid">
+
+          <!-- Guide 1: Math 101 -->
+          <article class="resource-card">
+            <div class="card-icon-box color-purple">📐</div>
+            <div class="card-body">
+              <div class="card-meta">Mathematics &bull; MATH 101</div>
+              <h3 class="card-title">Algebra & Calculus Review</h3>
+              <p class="card-text">Formulas, midterm prep problems, and worked answers for first-year mathematics.</p>
+              <a href="../assets/documents/study-guide-math101.pdf" class="card-action-link" download>Download PDF &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Guide 2: Course Syllabus Template -->
+          <article class="resource-card">
+            <div class="card-icon-box color-amber">📋</div>
+            <div class="card-body">
+              <div class="card-meta">General Template &bull; All Courses</div>
+              <h3 class="card-title">Course Syllabus Template</h3>
+              <p class="card-text">Standard syllabus guide explaining grading rubrics, lecture schedules, and course policies.</p>
+              <a href="../assets/documents/syllabus-template.pdf" class="card-action-link" download>Download PDF &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Guide 3: Academic Calendar Reference -->
+          <article class="resource-card">
+            <div class="card-icon-box color-blue">📅</div>
+            <div class="card-body">
+              <div class="card-meta">Calendar &bull; Fall Term</div>
+              <h3 class="card-title">Academic Schedule Sheet</h3>
+              <p class="card-text">Overview of examination windows, add/drop deadlines, and semester holidays.</p>
+              <a href="../assets/documents/academic-calendar.pdf" class="card-action-link" download>Download PDF &rarr;</a>
+            </div>
+          </article>
+
+          <!-- ========================================================
+               [COPY & PASTE THIS TEMPLATE BLOCK TO ADD A NEW GUIDE]:
+               ========================================================
+          <article class="resource-card">
+            <div class="card-icon-box color-purple">📘</div>
+            <div class="card-body">
+              <div class="card-meta">Subject Name &bull; COURSE 101</div>
+              <h3 class="card-title">Title of Study Guide</h3>
+              <p class="card-text">Description of topics covered, unit summaries, or exam prep notes.</p>
+              <a href="../assets/documents/your-file-name.pdf" class="card-action-link" download>Download PDF &rarr;</a>
+            </div>
+          </article>
+          ======================================================== -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. STUDY TIPS / HELPFUL ADVICE SECTION (CUSTOMIZE OR REMOVE)
+         ==================================================================== -->
+    <section class="section bg-light">
+      <div class="container container-sm">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Tips</span>
+          <h2 class="section-title">Effective Study Strategies</h2>
+          <p class="section-desc">Quick methods to get the most out of your study sessions.</p>
+        </div>
+
+        <div class="category-box">
+          <ul class="category-links" style="border: none; padding: 0;">
+            <li><strong>1. Active Recall:</strong> Test yourself frequently rather than passively re-reading notes.</li>
+            <li><strong>2. Spaced Repetition:</strong> Review topics over several days instead of cramming the night before.</li>
+            <li><strong>3. Study Groups:</strong> Form weekly groups to quiz each other and discuss tricky concepts.</li>
+            <li><strong>4. Use Tutoring:</strong> Visit campus tutoring centers early in the term before exam week.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       6. FOOTER
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Student Resources. <a href="../index.html">Return to Home</a> &bull; <a href="schedule.html">Schedules</a> &bull; <a href="help-faq.html">Help & FAQ</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
